@@ -1,3 +1,8 @@
+import { size } from './linked-list__size.function.js';
+import { clear } from './linked-list__clear.function.js';
+import { getFirst } from './linked-list__get-first.function.js';
+import { getLast } from './linked-list__get-last.function.js';
+
 // example of linked list in javascript
 const list = {
 	head: {
@@ -48,38 +53,16 @@ myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.append(20);
 
-console.log(myLinkedList);
-
 // return the number of nodes present in the linked list
-export function size() {
-	let count = 0;
-	let node = this.head;
-	while (node) {
-		count++;
-		node = node.next;
-	}
-	return count;
-}
-
-// empty the linked list
-export function clear() {
-	this.head = null;
-	this.tail = null;
-	this.length = 0;
-}
-
-// return the last node of the linked list
-export function getLast() {
-	let lastNode = this.head;
-	if (lastNode) {
-		while (lastNode.next) {
-			lastNode = lastNode.next;
-		}
-	}
-	return lastNode;
-}
+console.log(size(myLinkedList));
 
 // return the first node of the linked list
-export function getFirst() {
-    return this.head;
-}
+console.log(getFirst(myLinkedList));
+
+// return the last node of the linked list
+console.log(getLast(myLinkedList));
+
+// empty the linked list
+console.log(clear(myLinkedList));
+
+console.log(myLinkedList);
