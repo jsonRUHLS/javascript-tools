@@ -1,7 +1,7 @@
-import {size} from './linked-list__size.function.mjs';
-import {clearLinkedList} from './linked-list__clear.function.mjs';
-import {getFirst} from './linked-list__get-first.function.mjs';
-import {getLast} from './linked-list__get-last.function.mjs';
+import {size} from './linked-list__size.function.js';
+import {clearLinkedList} from './linked-list__clear.function.js';
+import {getFirst} from './linked-list__get-first.function.js';
+import {getLast} from './linked-list__get-last.function.js';
 import {LinkedList} from './linked-list.class.js';
 
 // example of linked list in javascript
